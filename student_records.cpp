@@ -48,3 +48,23 @@ namespace StudentUtils {
             case SENIOR: gradeStr = "Senior"; break;
             default: gradeStr = "Unknown"; break;
         }
+           // Format GPA to two decimal places
+           cout << fixed << setprecision(2);
+           cout << "Student Record:" << endl;
+           cout << "Name: " << student.name << endl;
+           cout << "Grade Level: " << gradeStr << endl;
+           cout << "GPA: " << student.gpa << endl;
+       }
+   
+       // Function to compare students by name for sorting
+       bool compareByName(const Student& a, const Student& b) {
+           return a.name < b.name;
+       }
+   
+       // Function to validate GPA (between 0.00 and 4.00)
+       bool isValidGPA(GPA gpa) {
+           return gpa >= 0.00 && gpa <= 4.00;
+       }
+   
+   } // End of namespace StudentUtils
+   
