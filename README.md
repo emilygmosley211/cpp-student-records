@@ -1,3 +1,4 @@
 # cpp-student-records
 
-This program is a hub for students to manage their records. Details such as name, grade level, and gpa are to be processed.
+This program is a hub for students record management. Details such as name, grade level, and gpa can be input and displayed. Features include: GPA Validation 
+                  Alphabetical Records
